@@ -9,15 +9,15 @@
 name: Build B70
 
 on: 
-#  release:
-#    types: [published]
+  release:
+    types: [published]
   push:
     branches: 
       - master
     paths:
       - 'b70.config'
-#  schedule:
-#    - cron: 0 8 * * 5
+  schedule:
+    - cron: 0 20 * * 4
 #  watch:
 #    types: [started]
 
