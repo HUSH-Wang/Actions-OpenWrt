@@ -17,7 +17,7 @@ on:
     paths:
       - 'b70.config'
   schedule:
-    - cron: '0 20 * * 4,7'
+    - cron: 0 20 */2 * *
 #  watch:
 #    types: [started]
 
