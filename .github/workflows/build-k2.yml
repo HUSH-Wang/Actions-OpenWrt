@@ -9,15 +9,15 @@
 name: Build K2
 
 on: 
-#  release:
-#    types: [published]
+  release:
+    types: [published]
   push:
     branches: 
       - master
     paths:
       - 'k2.config'
-#  schedule:
-#    - cron: 0 8 * * 5
+  schedule:
+    - cron: 0 20 * * 7,4
 #  watch:
 #    types: [started]
 
