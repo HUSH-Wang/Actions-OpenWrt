@@ -17,7 +17,7 @@ on:
     paths:
       - 'gee3.config'
   schedule:
-    - cron: 0 20 * * 7,4
+    - cron: 0 20 * * 4
 #  watch:
 #    types: [started]
 
