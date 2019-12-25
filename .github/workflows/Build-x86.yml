@@ -16,8 +16,8 @@ on:
       - master
     paths:
       - 'x86.config'
-#  schedule:
-#    - cron: 0 20 */2 * *
+  schedule:
+    - cron: 0 19 * * 4
 #  watch:
 #    types: [started]
 
