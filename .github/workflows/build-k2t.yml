@@ -17,7 +17,7 @@ on:
     paths:
       - 'k2t.config'
   schedule:
-    - cron: 0 19 * * 4
+    - cron: 0 19 * * 3
 #  watch:
 #    types: [started]
 
