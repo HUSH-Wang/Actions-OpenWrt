@@ -60,7 +60,7 @@ jobs:
     - name: Load custom configuration
       env:
         CONFIG_FILE: 'x86.config'
-        DIY_SH: 'diy.sh'
+        DIY_SH: 'x86.sh'
       run: |
         [ -e files ] && mv files openwrt/files
         [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
