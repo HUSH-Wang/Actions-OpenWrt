@@ -8,4 +8,4 @@
 
 # Add luci-app-OpenClash package
 git clone https://github.com/vernesong/OpenClash.git ../openclash
-cp ../openclash/luci-app-openclash ./package/feeds/packages/luci-app-openclash
+cp -r ../openclash/luci-app-openclash ./package/feeds/packages/luci-app-openclash
