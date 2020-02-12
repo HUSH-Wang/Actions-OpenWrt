@@ -60,7 +60,7 @@ jobs:
     - name: Load custom configuration
       env:
         CONFIG_FILE: 'k3.config'
-        DIY_SH: 'diy.sh'
+        DIY_SH: '3rdpkgs.sh'
       run: |
         [ -e files ] && mv files openwrt/files
         [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
