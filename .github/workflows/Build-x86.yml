@@ -26,7 +26,7 @@ env:
   REPO_BRANCH: master
   CONFIG_FILE: x86.config
   DIY_SH: 3rdpkgs.sh
-  FREE_UP_DISK: false
+  FREE_UP_DISK: true
   SSH_ACTIONS: false
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
