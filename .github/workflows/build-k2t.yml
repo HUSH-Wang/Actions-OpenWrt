@@ -119,5 +119,5 @@ jobs:
       uses: actions/upload-artifact@master
       if: steps.organize.outputs.status == 'success' && !cancelled()
       with:
-        name: OpenWrt_firmware
+        name: k2t_firmware
         path: ${{ env.FIRMWARE }}

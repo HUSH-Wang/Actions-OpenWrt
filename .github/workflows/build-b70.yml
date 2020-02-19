@@ -119,5 +119,5 @@ jobs:
       uses: actions/upload-artifact@master
       if: steps.organize.outputs.status == 'success' && !cancelled()
       with:
-        name: OpenWrt_firmware
+        name: b70_firmware
         path: ${{ env.FIRMWARE }}

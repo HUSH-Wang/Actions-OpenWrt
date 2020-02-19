@@ -112,6 +112,14 @@ jobs:
       run: |
         cd openwrt/bin/targets/*/*
         rm -rf packages
+        rm -f openwrt-bcm53xx-arris*
+        rm -f openwrt-bcm53xx-asus*
+        rm -f openwrt-bcm53xx-buffalo*
+        rm -f openwrt-bcm53xx-dlink*
+        rm -f openwrt-bcm53xx-linksys*
+        rm -f openwrt-bcm53xx-netgear*
+        rm -f openwrt-bcm53xx-smartrg*
+        
         echo "::set-env name=FIRMWARE::$(pwd)"
         echo "::set-output name=status::success"
         
@@ -119,5 +127,5 @@ jobs:
       uses: actions/upload-artifact@master
       if: steps.organize.outputs.status == 'success' && !cancelled()
       with:
-        name: OpenWrt_firmware
+        name: k3_firmware
         path: ${{ env.FIRMWARE }}
