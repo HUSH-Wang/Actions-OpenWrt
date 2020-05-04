@@ -23,8 +23,6 @@ on:
     types: started
 
 env:
-  TZ: Asia/Shanghai
-
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
