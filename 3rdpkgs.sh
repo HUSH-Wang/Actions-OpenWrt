@@ -20,6 +20,9 @@ echo "src-git helloworld https://github.com/fw876/helloworld" >> feeds.conf.defa
 #cp -r ../openclash/luci-app-openclash ./package/feeds/packages/luci-app-openclash
 echo "src-git openclash https://github.com/vernesong/OpenClash.git" >> feeds.conf.default
 
+# Add luci-app-dockerman package
+src-git dockerman https://github.com/lisaac/luci-app-dockerman.git
+
 # feeds update & install
 ./scripts/feeds update -a
 ./scripts/feeds install -a
