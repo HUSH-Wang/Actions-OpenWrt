@@ -21,7 +21,7 @@ echo "src-git helloworld https://github.com/fw876/helloworld" >> feeds.conf.defa
 echo "src-git openclash https://github.com/vernesong/OpenClash.git" >> feeds.conf.default
 
 # Add luci-app-dockerman package
-src-git dockerman https://github.com/lisaac/luci-app-dockerman.git
+echo "src-git dockerman https://github.com/lisaac/luci-app-dockerman.git" >> feeds.conf.default
 
 # feeds update & install
 ./scripts/feeds update -a
